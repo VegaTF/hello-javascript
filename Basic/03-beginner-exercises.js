@@ -143,18 +143,22 @@ console.log(typeof myBigInt2)
 
 // 9. A continuación, modifica los valores de las constantes
 
-// myString2 = "Esto es otro string"
+/*
+myString2 = "Esto es otro string"
 
-// myInt2 = 5
+myInt2 = 5
 
-// myBoolean2 = false
+myBoolean2 = false
 
-// mySymbol2 = Symbol("Este es otro símbolo")
+mySymbol2 = Symbol("Este es otro símbolo")
 
-// myUndefined2 = undefined
+myUndefined2 = undefined
 
-// myNull2 = null
+myNull2 = null
 
-// myBigInt2 = BigInt(43534543534534534)
+myBigInt2 = BigInt(43534543534534534)
+*/
 
 // 10. Comenta las líneas que produzcan algún tipo de error al ejecutarse
+
+console.log("Líneas que producen error comentadas")
