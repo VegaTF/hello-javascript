@@ -31,8 +31,10 @@ for (let i = 1; i < 51; i++) {
 
 let arrayNombres = ["Jorge", "Álvaro", "Patri", "Fer", "Alberto", "Jose"]
 
-for (let value of arrayNombres) {
-    console.log(value)
+let i = 0;
+while(i < arrayNombres.length){
+    console.log(arrayNombres[i]);
+    i++;
 }
 
 // 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
@@ -41,10 +43,10 @@ let cadenaTexto = "Hola que tal, vamos a contar las vocales"
 let cuenta = 0
 let vocales = ["a","e","i","o","u"]
 
-for (let value of cadenaTexto.toLowerCase()) {
-    if (vocales.includes(value)) {
-        cuenta++
-    }
+i = 0;
+while(i < cadenaTexto.length){
+    if(vocales.includes(cadenaTexto[i].toLowerCase())) cuenta++;
+    i++;
 }
 
 console.log(cuenta)
@@ -72,22 +74,20 @@ for (let i = 0; i < 11; i++) {
 
 let cadenaTextoInvertida = ""
 
-for (let i = cadenaTexto.length - 1; i >= 0; i--) {
-    cadenaTextoInvertida += cadenaTexto[i]
+i = cadenaTexto.length - 1;
+while(i >= 0){
+    cadenaTextoInvertida += cadenaTexto[i];
+    i--;
 }
 console.log(cadenaTextoInvertida)
 
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
 
-let a = 0;
+let a = 0
 let b = 1;
-
-console.log(a); // 0
-console.log(b); // 1
-
-for (let i = 3; i <= 10; i++) {
+while(a <= 100){
+    console.log(a);
     let siguiente = a + b;
-    console.log(siguiente);
     a = b;
     b = siguiente;
 }
@@ -97,10 +97,10 @@ for (let i = 3; i <= 10; i++) {
 let arrayNumeros2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 let mayoresA10 = []
 
-for (let value of arrayNumeros2) {
-    if (value > 10) {
-        mayoresA10.push(value)
-    }
+i = 0;
+while(i < arrayNumeros2.length){
+    if(arrayNumeros2[i] > 10) mayoresA10.push(arrayNumeros2[i]);
+    i++;
 }
 
 console.log(mayoresA10)
